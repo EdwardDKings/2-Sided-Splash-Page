@@ -1,0 +1,211 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    background: #111;
+}
+
+
+/* =================
+   Typography 
+   ================= */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #98DFEA;
+    margin: 0;
+}
+
+.join-text {
+    color: #B06D7F;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+a{
+    color: #98DFEA;
+    transform: scale(1);
+    transition: transform 50ms;
+    display: inline-block;
+}
+
+a:hover,
+a:focus{
+    color: white;
+    transform: scale(1.1);
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    font-weight: 900;
+    color: #98DFEA;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: 0.625rem;
+    margin: 0;
+    padding-top: 2px;
+    color: #B06D7F;
+    font-weight: 900;
+    text-transform: uppercase;
+    order: -1;
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to right, #B06D7F, #321C5C) 1;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+strong { 
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+
+/* =================
+   Intro section 
+   ================= */
+   
+.intro {
+    background-image: url(../images/ryan-shultis-W9QP988ePss-unsplash.jpg), linear-gradient(135deg,#E06C78, #321C5C);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+
+/* =================
+   main-content section 
+   ================= */
+   
+.main-content {
+    padding: 2em 1em;
+}
+
+
+
+.intro > *,
+.main-content > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =================
+   form
+   ================= */
+   
+.email-collector {
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+.btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: .75em;
+    padding: .5em;
+    border: 1px solid #07BEB8;
+    transform: scale(1);
+    transition: transform 250ms;
+    outline: pink;
+}
+
+input:focus {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+    outline: pink;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to left, #B06D7F, #321C5C);
+    color: #fff;
+    transform: scale(1);
+    transition: transform 250ms;
+    margin-bottom: 1em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    transform: scale(1.1);
+}
+
+#Mode-Button{
+    max-width: 100px;
+    text-align: center;
+}
+
+/* =================
+   media queries 
+   ================= */
+   
+@media (min-width: 760px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+    
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: -1;
+    }
+}
